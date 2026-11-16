@@ -15,6 +15,6 @@ The server requires a separate, licensed MATLAB installation. In your MCP client
 
 ## Maintenance
 
-The [update workflow](.github/workflows/autobump.yml) checks for new [upstream releases](https://github.com/matlab/matlab-mcp-server/releases) daily and opens a formula update pull request when needed. A maintainer reviews and merges the pull request before the update becomes available through Homebrew. The workflow can also be run manually from the repository's Actions tab.
+The [update workflow](.github/workflows/autobump.yml) checks for new [upstream releases](https://github.com/matlab/matlab-mcp-server/releases) every hour, at minute 23. Before publishing an update, it verifies the official arm64 binary's SHA-256, MathWorks code signature, and reported version on an Apple Silicon runner. It opens and merges only its own formula update PR for the verified commit. A manual run also verifies the current binary by default.
 
 For a manual update, use the URL, version, and SHA-256 of the official `matlab-mcp-server-macos-arm64` asset.
