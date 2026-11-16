@@ -15,4 +15,6 @@ The server requires a separate, licensed MATLAB installation. In your MCP client
 
 ## Maintenance
 
-On a new [upstream release](https://github.com/matlab/matlab-mcp-server/releases), update the formula's URL, version, and SHA-256 using the official `matlab-mcp-server-macos-arm64` asset. Commit and push the formula change before running `brew update` and `brew upgrade` on client machines.
+The [update workflow](.github/workflows/autobump.yml) checks for new [upstream releases](https://github.com/matlab/matlab-mcp-server/releases) daily and opens a formula update pull request when needed. A maintainer reviews and merges the pull request before the update becomes available through Homebrew. The workflow can also be run manually from the repository's Actions tab.
+
+For a manual update, use the URL, version, and SHA-256 of the official `matlab-mcp-server-macos-arm64` asset.
