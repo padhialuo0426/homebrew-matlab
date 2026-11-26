@@ -1,9 +1,9 @@
 class MatlabMcpServer < Formula
   desc "Official MathWorks MCP server for MATLAB"
   homepage "https://github.com/matlab/matlab-mcp-server"
-  url "https://github.com/matlab/matlab-mcp-server/releases/download/v0.16.1/matlab-mcp-server-macos-arm64"
-  version "0.16.1"
-  sha256 "06661014da29d781e232fe9c257678357b5553b917cad29cbb644e9c6ece70fe"
+  url "https://github.com/matlab/matlab-mcp-server/releases/download/v0.16.2/matlab-mcp-server-macos-arm64"
+  version "0.16.2"
+  sha256 "0126382f9ef38e8eae71694c6916919538b3bc402088d8f02ca952f338eebed6"
 
   depends_on :macos
   depends_on arch: :arm64
